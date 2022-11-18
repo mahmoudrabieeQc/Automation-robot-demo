@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.6 on linux)" generated="20221118 02:00:38.770" rpa="false" schemaversion="3">
+<suite id="s1" name="SearchForNike" source="/home/mahmoud/robot demo2/RobotFrameWorkTestAutomationLevel2/Tests/04__SearchForNike.robot">
+<test id="s1-t1" name="user can search for NIKE" line="12">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221118 02:00:38.990" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20221118 02:00:38.990" endtime="20221118 02:00:39.899"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221118 02:00:39.900" endtime="20221118 02:00:40.006"/>
+</kw>
+<status status="PASS" starttime="20221118 02:00:38.989" endtime="20221118 02:00:40.006"/>
+</kw>
+<kw name="&quot;Login&quot; Page" library="ecommerceApp">
+<kw name="Load" library="Common">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221118 02:00:40.009" level="INFO">Opening url 'https://magento.softwaretestingboard.com/'</msg>
+<status status="PASS" starttime="20221118 02:00:40.008" endtime="20221118 02:00:42.210"/>
+</kw>
+<status status="PASS" starttime="20221118 02:00:40.008" endtime="20221118 02:00:42.211"/>
+</kw>
+<kw name="Click to Login Link" library="HomePage">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${login_link_variable}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221118 02:00:42.213" level="INFO">Clicking link 'xpath=//div[@class='panel header']//a[contains(text(),'Sign In')]'.</msg>
+<msg timestamp="20221118 02:00:42.225" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Stacktrace:
+#0 0x55cbab358463 &lt;unknown&gt;
+#1 0x55cbab11c8d8 &lt;unknown&gt;
+#2 0x55cbab0f8a50 &lt;unknown&gt;
+#3 0x55cbab17f84d &lt;unknown&gt;
+#4 0x55cbab1938d9 &lt;unknown&gt;
+#5 0x55cbab17b443 &lt;unknown&gt;
+#6 0x55cbab14c3c5 &lt;unknown&gt;
+#7 0x55cbab14d531 &lt;unknown&gt;
+#8 0x55cbab3aadce &lt;unknown&gt;
+#9 0x55cbab3ae192 &lt;unknown&gt;
+#10 0x55cbab38f93e &lt;unknown&gt;
+#11 0x55cbab3af103 &lt;unknown&gt;
+#12 0x55cbab382d85 &lt;unknown&gt;
+#13 0x55cbab3d00a8 &lt;unknown&gt;
+#14 0x55cbab3d0239 &lt;unknown&gt;
+#15 0x55cbab3eb492 &lt;unknown&gt;
+#16 0x7fa3f7cf8b43 &lt;unknown&gt;
+</msg>
+<msg timestamp="20221118 02:00:42.226" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Stacktrace:
+#0 0x55cbab358463 &lt;unknown&gt;
+#1 0x55cbab11c8d8 &lt;unknown&gt;
+#2 0x55cbab0f8a50 &lt;unknown&gt;
+#3 0x55cbab17f84d &lt;unknown&gt;
+#4 0x55cbab1938d9 &lt;unknown&gt;
+#5 0x55cbab17b443 &lt;unknown&gt;
+#6 0x55cbab14c3c5 &lt;unknown&gt;
+#7 0x55cbab14d531 &lt;unknown&gt;
+#8 0x55cbab3aadce &lt;unknown&gt;
+#9 0x55cbab3ae192 &lt;unknown&gt;
+#10 0x55cbab38f93e &lt;unknown&gt;
+#11 0x55cbab3af103 &lt;unknown&gt;
+#12 0x55cbab382d85 &lt;unknown&gt;
+#13 0x55cbab3d00a8 &lt;unknown&gt;
+#14 0x55cbab3d0239 &lt;unknown&gt;
+#15 0x55cbab3eb492 &lt;unknown&gt;
+#16 0x7fa3f7cf8b43 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20221118 02:00:42.212" endtime="20221118 02:00:42.228"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221118 02:00:42.229" endtime="20221118 02:00:42.229"/>
+</kw>
+<status status="FAIL" starttime="20221118 02:00:42.211" endtime="20221118 02:00:42.229"/>
+</kw>
+<kw name="Enter your &quot;Email&quot;" library="Login">
+<status status="NOT RUN" starttime="20221118 02:00:42.230" endtime="20221118 02:00:42.230"/>
+</kw>
+<kw name="Enter your &quot;Password&quot;" library="Login">
+<status status="NOT RUN" starttime="20221118 02:00:42.230" endtime="20221118 02:00:42.231"/>
+</kw>
+<kw name="Submit" library="Login">
+<status status="NOT RUN" starttime="20221118 02:00:42.231" endtime="20221118 02:00:42.231"/>
+</kw>
+<status status="FAIL" starttime="20221118 02:00:40.007" endtime="20221118 02:00:42.232"/>
+</kw>
+<kw name=" &quot;SearchForNike&quot; Page" library="ecommerceApp">
+<status status="NOT RUN" starttime="20221118 02:00:42.232" endtime="20221118 02:00:42.232"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221118 02:00:42.234" endtime="20221118 02:00:42.295"/>
+</kw>
+<status status="PASS" starttime="20221118 02:00:42.233" endtime="20221118 02:00:42.295"/>
+</kw>
+<tag>Add To Wishlist</tag>
+<status status="FAIL" starttime="20221118 02:00:38.989" endtime="20221118 02:00:42.295">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Stacktrace:
+#0 0x55cbab358463 &lt;unknown&gt;
+#1 0x55cbab11c8d8 &lt;unknown&gt;
+#2 0x55cbab0f8a50 &lt;unknown&gt;
+#3 0x55cbab17f84d &lt;unknown&gt;
+#4 0x55cbab1938d9 &lt;unknown&gt;
+#5 0x55cbab17b443 &lt;unknown&gt;
+#6 0x55cbab14c3c5 &lt;unknown&gt;
+#7 0x55cbab14d531 &lt;unknown&gt;
+#8 0x55cbab3aadce &lt;unknown&gt;
+#9 0x55cbab3ae192 &lt;unknown&gt;
+#10 0x55cbab38f93e &lt;unknown&gt;
+#11 0x55cbab3af103 &lt;unknown&gt;
+#12 0x55cbab382d85 &lt;unknown&gt;
+#13 0x55cbab3d00a8 &lt;unknown&gt;
+#14 0x55cbab3d0239 &lt;unknown&gt;
+#15 0x55cbab3eb492 &lt;unknown&gt;
+#16 0x7fa3f7cf8b43 &lt;unknown&gt;
+</status>
+</test>
+<doc>user can Search for product</doc>
+<status status="FAIL" starttime="20221118 02:00:38.771" endtime="20221118 02:00:42.296"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Add To Wishlist</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="SearchForNike">SearchForNike</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221118 02:00:42.225" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=107.0.5304.110)
+Stacktrace:
+#0 0x55cbab358463 &lt;unknown&gt;
+#1 0x55cbab11c8d8 &lt;unknown&gt;
+#2 0x55cbab0f8a50 &lt;unknown&gt;
+#3 0x55cbab17f84d &lt;unknown&gt;
+#4 0x55cbab1938d9 &lt;unknown&gt;
+#5 0x55cbab17b443 &lt;unknown&gt;
+#6 0x55cbab14c3c5 &lt;unknown&gt;
+#7 0x55cbab14d531 &lt;unknown&gt;
+#8 0x55cbab3aadce &lt;unknown&gt;
+#9 0x55cbab3ae192 &lt;unknown&gt;
+#10 0x55cbab38f93e &lt;unknown&gt;
+#11 0x55cbab3af103 &lt;unknown&gt;
+#12 0x55cbab382d85 &lt;unknown&gt;
+#13 0x55cbab3d00a8 &lt;unknown&gt;
+#14 0x55cbab3d0239 &lt;unknown&gt;
+#15 0x55cbab3eb492 &lt;unknown&gt;
+#16 0x7fa3f7cf8b43 &lt;unknown&gt;
+</msg>
+</errors>
+</robot>
